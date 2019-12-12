@@ -11,17 +11,11 @@ using System.Windows.Forms;
 
 namespace AakFunc
 {
-    public partial class Form1 : CCSkinMain
+    public partial class AddAccount : CCSkinMain
     {
-        public Form1()
+        public AddAccount()
         {
             InitializeComponent();
-        }
-
-        private void Btn_add_account_Click(object sender, EventArgs e)
-        {
-            AddAccount addAccount = new AddAccount();
-            addAccount.Show();
         }
     }
 }

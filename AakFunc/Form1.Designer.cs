@@ -40,14 +40,14 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.skinDataGridView1 = new CCWin.SkinControl.SkinDataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.skinButton1 = new CCWin.SkinControl.SkinButton();
+            this.btn_add_account = new CCWin.SkinControl.SkinButton();
             this.btn_load_database = new CCWin.SkinControl.SkinButton();
             this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.lb_wxid = new CCWin.SkinControl.SkinLabel();
-            this.btn_add_account = new CCWin.SkinControl.SkinButton();
-            this.skinLabel2 = new CCWin.SkinControl.SkinLabel();
             this.lb_To_Wxid = new CCWin.SkinControl.SkinLabel();
-            this.skinButton1 = new CCWin.SkinControl.SkinButton();
+            this.skinLabel2 = new CCWin.SkinControl.SkinLabel();
+            this.lb_wxid = new CCWin.SkinControl.SkinLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).BeginInit();
@@ -157,6 +157,41 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "操 作";
             // 
+            // skinButton1
+            // 
+            this.skinButton1.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton1.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton1.DownBack = null;
+            this.skinButton1.Image = ((System.Drawing.Image)(resources.GetObject("skinButton1.Image")));
+            this.skinButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.skinButton1.Location = new System.Drawing.Point(231, 20);
+            this.skinButton1.MouseBack = null;
+            this.skinButton1.Name = "skinButton1";
+            this.skinButton1.NormlBack = null;
+            this.skinButton1.Size = new System.Drawing.Size(86, 31);
+            this.skinButton1.TabIndex = 2;
+            this.skinButton1.Text = "刷新列表";
+            this.skinButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.skinButton1.UseVisualStyleBackColor = false;
+            // 
+            // btn_add_account
+            // 
+            this.btn_add_account.BackColor = System.Drawing.Color.Transparent;
+            this.btn_add_account.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btn_add_account.DownBack = null;
+            this.btn_add_account.Image = ((System.Drawing.Image)(resources.GetObject("btn_add_account.Image")));
+            this.btn_add_account.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_add_account.Location = new System.Drawing.Point(24, 20);
+            this.btn_add_account.MouseBack = null;
+            this.btn_add_account.Name = "btn_add_account";
+            this.btn_add_account.NormlBack = null;
+            this.btn_add_account.Size = new System.Drawing.Size(81, 31);
+            this.btn_add_account.TabIndex = 1;
+            this.btn_add_account.Text = "添加账号";
+            this.btn_add_account.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_add_account.UseVisualStyleBackColor = false;
+            this.btn_add_account.Click += new System.EventHandler(this.Btn_add_account_Click);
+            // 
             // btn_load_database
             // 
             this.btn_load_database.BackColor = System.Drawing.Color.Transparent;
@@ -199,34 +234,17 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "当前选中";
             // 
-            // lb_wxid
+            // lb_To_Wxid
             // 
-            this.lb_wxid.AutoSize = true;
-            this.lb_wxid.BackColor = System.Drawing.Color.Transparent;
-            this.lb_wxid.BorderColor = System.Drawing.Color.White;
-            this.lb_wxid.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lb_wxid.Location = new System.Drawing.Point(79, 35);
-            this.lb_wxid.Name = "lb_wxid";
-            this.lb_wxid.Size = new System.Drawing.Size(49, 17);
-            this.lb_wxid.TabIndex = 1;
-            this.lb_wxid.Text = "Wxid：";
-            // 
-            // btn_add_account
-            // 
-            this.btn_add_account.BackColor = System.Drawing.Color.Transparent;
-            this.btn_add_account.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.btn_add_account.DownBack = null;
-            this.btn_add_account.Image = ((System.Drawing.Image)(resources.GetObject("btn_add_account.Image")));
-            this.btn_add_account.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_add_account.Location = new System.Drawing.Point(24, 20);
-            this.btn_add_account.MouseBack = null;
-            this.btn_add_account.Name = "btn_add_account";
-            this.btn_add_account.NormlBack = null;
-            this.btn_add_account.Size = new System.Drawing.Size(81, 31);
-            this.btn_add_account.TabIndex = 1;
-            this.btn_add_account.Text = "添加账号";
-            this.btn_add_account.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_add_account.UseVisualStyleBackColor = false;
+            this.lb_To_Wxid.AutoSize = true;
+            this.lb_To_Wxid.BackColor = System.Drawing.Color.Transparent;
+            this.lb_To_Wxid.BorderColor = System.Drawing.Color.White;
+            this.lb_To_Wxid.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lb_To_Wxid.Location = new System.Drawing.Point(99, 68);
+            this.lb_To_Wxid.Name = "lb_To_Wxid";
+            this.lb_To_Wxid.Size = new System.Drawing.Size(69, 17);
+            this.lb_To_Wxid.TabIndex = 3;
+            this.lb_To_Wxid.Text = "To_Wxid：";
             // 
             // skinLabel2
             // 
@@ -240,34 +258,17 @@
             this.skinLabel2.TabIndex = 2;
             this.skinLabel2.Text = "To_Wxid：";
             // 
-            // lb_To_Wxid
+            // lb_wxid
             // 
-            this.lb_To_Wxid.AutoSize = true;
-            this.lb_To_Wxid.BackColor = System.Drawing.Color.Transparent;
-            this.lb_To_Wxid.BorderColor = System.Drawing.Color.White;
-            this.lb_To_Wxid.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lb_To_Wxid.Location = new System.Drawing.Point(99, 68);
-            this.lb_To_Wxid.Name = "lb_To_Wxid";
-            this.lb_To_Wxid.Size = new System.Drawing.Size(69, 17);
-            this.lb_To_Wxid.TabIndex = 3;
-            this.lb_To_Wxid.Text = "To_Wxid：";
-            // 
-            // skinButton1
-            // 
-            this.skinButton1.BackColor = System.Drawing.Color.Transparent;
-            this.skinButton1.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButton1.DownBack = null;
-            this.skinButton1.Image = ((System.Drawing.Image)(resources.GetObject("skinButton1.Image")));
-            this.skinButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.skinButton1.Location = new System.Drawing.Point(231, 20);
-            this.skinButton1.MouseBack = null;
-            this.skinButton1.Name = "skinButton1";
-            this.skinButton1.NormlBack = null;
-            this.skinButton1.Size = new System.Drawing.Size(86, 31);
-            this.skinButton1.TabIndex = 2;
-            this.skinButton1.Text = "刷新列表";
-            this.skinButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.skinButton1.UseVisualStyleBackColor = false;
+            this.lb_wxid.AutoSize = true;
+            this.lb_wxid.BackColor = System.Drawing.Color.Transparent;
+            this.lb_wxid.BorderColor = System.Drawing.Color.White;
+            this.lb_wxid.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lb_wxid.Location = new System.Drawing.Point(79, 35);
+            this.lb_wxid.Name = "lb_wxid";
+            this.lb_wxid.Size = new System.Drawing.Size(49, 17);
+            this.lb_wxid.TabIndex = 1;
+            this.lb_wxid.Text = "Wxid：";
             // 
             // Form1
             // 
