@@ -85,6 +85,7 @@
     <Compile Include="Common\AppConfig.cs" />
     <Compile Include="Common\ProxyConfig.cs" />
     <Compile Include="Facade\FacadeBase.cs" />
+    <Compile Include="Facade\LoadDataFacade.cs" />
     <Compile Include="Facade\LoginFacade.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

@@ -35,12 +35,12 @@
             this.tb_username = new CCWin.SkinControl.SkinTextBox();
             this.btn_getLoginQrcode = new CCWin.SkinControl.SkinButton();
             this.skinLabel2 = new CCWin.SkinControl.SkinLabel();
-            this.skinTextBox1 = new CCWin.SkinControl.SkinTextBox();
+            this.tb_userpwd = new CCWin.SkinControl.SkinTextBox();
             this.skinLabel3 = new CCWin.SkinControl.SkinLabel();
-            this.skinTextBox2 = new CCWin.SkinControl.SkinTextBox();
+            this.tb_decid = new CCWin.SkinControl.SkinTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.skinLabel4 = new CCWin.SkinControl.SkinLabel();
-            this.skinWaterTextBox1 = new CCWin.SkinControl.SkinWaterTextBox();
+            this.tb_62data = new CCWin.SkinControl.SkinWaterTextBox();
             this.btn_add = new CCWin.SkinControl.SkinButton();
             this.btn_get62data = new CCWin.SkinControl.SkinButton();
             this.btn_getdiecid = new CCWin.SkinControl.SkinButton();
@@ -148,46 +148,46 @@
             this.skinLabel2.TabIndex = 4;
             this.skinLabel2.Text = "密码：";
             // 
-            // skinTextBox1
+            // tb_userpwd
             // 
-            this.skinTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox1.DownBack = null;
-            this.skinTextBox1.Icon = null;
-            this.skinTextBox1.IconIsButton = false;
-            this.skinTextBox1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox1.IsPasswordChat = '\0';
-            this.skinTextBox1.IsSystemPasswordChar = false;
-            this.skinTextBox1.Lines = new string[0];
-            this.skinTextBox1.Location = new System.Drawing.Point(96, 64);
-            this.skinTextBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox1.MaxLength = 32767;
-            this.skinTextBox1.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox1.MouseBack = null;
-            this.skinTextBox1.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox1.Multiline = false;
-            this.skinTextBox1.Name = "skinTextBox1";
-            this.skinTextBox1.NormlBack = null;
-            this.skinTextBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox1.ReadOnly = false;
-            this.skinTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox1.Size = new System.Drawing.Size(185, 28);
+            this.tb_userpwd.BackColor = System.Drawing.Color.Transparent;
+            this.tb_userpwd.DownBack = null;
+            this.tb_userpwd.Icon = null;
+            this.tb_userpwd.IconIsButton = false;
+            this.tb_userpwd.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.tb_userpwd.IsPasswordChat = '\0';
+            this.tb_userpwd.IsSystemPasswordChar = false;
+            this.tb_userpwd.Lines = new string[0];
+            this.tb_userpwd.Location = new System.Drawing.Point(96, 64);
+            this.tb_userpwd.Margin = new System.Windows.Forms.Padding(0);
+            this.tb_userpwd.MaxLength = 32767;
+            this.tb_userpwd.MinimumSize = new System.Drawing.Size(28, 28);
+            this.tb_userpwd.MouseBack = null;
+            this.tb_userpwd.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.tb_userpwd.Multiline = false;
+            this.tb_userpwd.Name = "tb_userpwd";
+            this.tb_userpwd.NormlBack = null;
+            this.tb_userpwd.Padding = new System.Windows.Forms.Padding(5);
+            this.tb_userpwd.ReadOnly = false;
+            this.tb_userpwd.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tb_userpwd.Size = new System.Drawing.Size(185, 28);
             // 
             // 
             // 
-            this.skinTextBox1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox1.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox1.SkinTxt.Name = "BaseText";
-            this.skinTextBox1.SkinTxt.Size = new System.Drawing.Size(175, 18);
-            this.skinTextBox1.SkinTxt.TabIndex = 0;
-            this.skinTextBox1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox1.SkinTxt.WaterText = "";
-            this.skinTextBox1.TabIndex = 3;
-            this.skinTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox1.WaterText = "";
-            this.skinTextBox1.WordWrap = true;
+            this.tb_userpwd.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_userpwd.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tb_userpwd.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.tb_userpwd.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.tb_userpwd.SkinTxt.Name = "BaseText";
+            this.tb_userpwd.SkinTxt.Size = new System.Drawing.Size(175, 18);
+            this.tb_userpwd.SkinTxt.TabIndex = 0;
+            this.tb_userpwd.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.tb_userpwd.SkinTxt.WaterText = "";
+            this.tb_userpwd.TabIndex = 3;
+            this.tb_userpwd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tb_userpwd.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.tb_userpwd.WaterText = "";
+            this.tb_userpwd.WordWrap = true;
             // 
             // skinLabel3
             // 
@@ -201,60 +201,60 @@
             this.skinLabel3.TabIndex = 5;
             this.skinLabel3.Text = "设备ID：";
             // 
-            // skinTextBox2
+            // tb_decid
             // 
-            this.skinTextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox2.DownBack = null;
-            this.skinTextBox2.Icon = null;
-            this.skinTextBox2.IconIsButton = false;
-            this.skinTextBox2.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox2.IsPasswordChat = '\0';
-            this.skinTextBox2.IsSystemPasswordChar = false;
-            this.skinTextBox2.Lines = new string[0];
-            this.skinTextBox2.Location = new System.Drawing.Point(96, 105);
-            this.skinTextBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox2.MaxLength = 32767;
-            this.skinTextBox2.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox2.MouseBack = null;
-            this.skinTextBox2.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox2.Multiline = false;
-            this.skinTextBox2.Name = "skinTextBox2";
-            this.skinTextBox2.NormlBack = null;
-            this.skinTextBox2.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox2.ReadOnly = false;
-            this.skinTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox2.Size = new System.Drawing.Size(185, 28);
+            this.tb_decid.BackColor = System.Drawing.Color.Transparent;
+            this.tb_decid.DownBack = null;
+            this.tb_decid.Icon = null;
+            this.tb_decid.IconIsButton = false;
+            this.tb_decid.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.tb_decid.IsPasswordChat = '\0';
+            this.tb_decid.IsSystemPasswordChar = false;
+            this.tb_decid.Lines = new string[0];
+            this.tb_decid.Location = new System.Drawing.Point(96, 105);
+            this.tb_decid.Margin = new System.Windows.Forms.Padding(0);
+            this.tb_decid.MaxLength = 32767;
+            this.tb_decid.MinimumSize = new System.Drawing.Size(28, 28);
+            this.tb_decid.MouseBack = null;
+            this.tb_decid.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.tb_decid.Multiline = false;
+            this.tb_decid.Name = "tb_decid";
+            this.tb_decid.NormlBack = null;
+            this.tb_decid.Padding = new System.Windows.Forms.Padding(5);
+            this.tb_decid.ReadOnly = false;
+            this.tb_decid.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tb_decid.Size = new System.Drawing.Size(185, 28);
             // 
             // 
             // 
-            this.skinTextBox2.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox2.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox2.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox2.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox2.SkinTxt.Name = "BaseText";
-            this.skinTextBox2.SkinTxt.Size = new System.Drawing.Size(175, 18);
-            this.skinTextBox2.SkinTxt.TabIndex = 0;
-            this.skinTextBox2.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox2.SkinTxt.WaterText = "";
-            this.skinTextBox2.TabIndex = 4;
-            this.skinTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox2.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox2.WaterText = "";
-            this.skinTextBox2.WordWrap = true;
+            this.tb_decid.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_decid.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tb_decid.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.tb_decid.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.tb_decid.SkinTxt.Name = "BaseText";
+            this.tb_decid.SkinTxt.Size = new System.Drawing.Size(175, 18);
+            this.tb_decid.SkinTxt.TabIndex = 0;
+            this.tb_decid.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.tb_decid.SkinTxt.WaterText = "";
+            this.tb_decid.TabIndex = 4;
+            this.tb_decid.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tb_decid.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.tb_decid.WaterText = "";
+            this.tb_decid.WordWrap = true;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btn_getdiecid);
             this.groupBox2.Controls.Add(this.btn_get62data);
             this.groupBox2.Controls.Add(this.btn_add);
-            this.groupBox2.Controls.Add(this.skinWaterTextBox1);
+            this.groupBox2.Controls.Add(this.tb_62data);
             this.groupBox2.Controls.Add(this.skinLabel4);
             this.groupBox2.Controls.Add(this.skinLabel1);
-            this.groupBox2.Controls.Add(this.skinTextBox2);
+            this.groupBox2.Controls.Add(this.tb_decid);
             this.groupBox2.Controls.Add(this.tb_username);
             this.groupBox2.Controls.Add(this.skinLabel3);
             this.groupBox2.Controls.Add(this.skinLabel2);
-            this.groupBox2.Controls.Add(this.skinTextBox1);
+            this.groupBox2.Controls.Add(this.tb_userpwd);
             this.groupBox2.Location = new System.Drawing.Point(359, 31);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(401, 394);
@@ -274,15 +274,15 @@
             this.skinLabel4.TabIndex = 6;
             this.skinLabel4.Text = "62数据：";
             // 
-            // skinWaterTextBox1
+            // tb_62data
             // 
-            this.skinWaterTextBox1.Location = new System.Drawing.Point(96, 155);
-            this.skinWaterTextBox1.Multiline = true;
-            this.skinWaterTextBox1.Name = "skinWaterTextBox1";
-            this.skinWaterTextBox1.Size = new System.Drawing.Size(280, 128);
-            this.skinWaterTextBox1.TabIndex = 7;
-            this.skinWaterTextBox1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinWaterTextBox1.WaterText = "";
+            this.tb_62data.Location = new System.Drawing.Point(96, 155);
+            this.tb_62data.Multiline = true;
+            this.tb_62data.Name = "tb_62data";
+            this.tb_62data.Size = new System.Drawing.Size(280, 128);
+            this.tb_62data.TabIndex = 7;
+            this.tb_62data.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.tb_62data.WaterText = "";
             // 
             // btn_add
             // 
@@ -325,6 +325,7 @@
             this.btn_getdiecid.TabIndex = 9;
             this.btn_getdiecid.Text = "自动分配";
             this.btn_getdiecid.UseVisualStyleBackColor = false;
+            this.btn_getdiecid.Click += new System.EventHandler(this.Btn_getdiecid_Click);
             // 
             // AddAccount
             // 
@@ -352,11 +353,11 @@
         private CCWin.SkinControl.SkinTextBox tb_username;
         private CCWin.SkinControl.SkinButton btn_getLoginQrcode;
         private CCWin.SkinControl.SkinLabel skinLabel2;
-        private CCWin.SkinControl.SkinTextBox skinTextBox1;
+        private CCWin.SkinControl.SkinTextBox tb_userpwd;
         private CCWin.SkinControl.SkinLabel skinLabel3;
-        private CCWin.SkinControl.SkinTextBox skinTextBox2;
+        private CCWin.SkinControl.SkinTextBox tb_decid;
         private System.Windows.Forms.GroupBox groupBox2;
-        private CCWin.SkinControl.SkinWaterTextBox skinWaterTextBox1;
+        private CCWin.SkinControl.SkinWaterTextBox tb_62data;
         private CCWin.SkinControl.SkinLabel skinLabel4;
         private CCWin.SkinControl.SkinButton btn_add;
         private CCWin.SkinControl.SkinButton btn_get62data;
