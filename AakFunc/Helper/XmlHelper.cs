@@ -30,7 +30,7 @@ namespace AakFunc.Helper
         /// <returns></returns>
         public static string Serialize(object obj, bool isOmitXmlDeclaration, bool isIndent)
         {
-            try
+            try 
             {
                 string xmlString;
                 XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
