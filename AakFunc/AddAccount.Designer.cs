@@ -112,7 +112,8 @@
             this.tb_username.IconMouseState = CCWin.SkinClass.ControlState.Normal;
             this.tb_username.IsPasswordChat = '\0';
             this.tb_username.IsSystemPasswordChar = false;
-            this.tb_username.Lines = new string[0];
+            this.tb_username.Lines = new string[] {
+        "demon2019ww"};
             this.tb_username.Location = new System.Drawing.Point(96, 23);
             this.tb_username.Margin = new System.Windows.Forms.Padding(0);
             this.tb_username.MaxLength = 32767;
@@ -139,6 +140,7 @@
             this.tb_username.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tb_username.SkinTxt.WaterText = "";
             this.tb_username.TabIndex = 2;
+            this.tb_username.Text = "demon2019ww";
             this.tb_username.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tb_username.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tb_username.WaterText = "";
@@ -165,7 +167,8 @@
             this.tb_userpwd.IconMouseState = CCWin.SkinClass.ControlState.Normal;
             this.tb_userpwd.IsPasswordChat = '\0';
             this.tb_userpwd.IsSystemPasswordChar = false;
-            this.tb_userpwd.Lines = new string[0];
+            this.tb_userpwd.Lines = new string[] {
+        "13054134167c"};
             this.tb_userpwd.Location = new System.Drawing.Point(96, 64);
             this.tb_userpwd.Margin = new System.Windows.Forms.Padding(0);
             this.tb_userpwd.MaxLength = 32767;
@@ -192,6 +195,7 @@
             this.tb_userpwd.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tb_userpwd.SkinTxt.WaterText = "";
             this.tb_userpwd.TabIndex = 3;
+            this.tb_userpwd.Text = "13054134167c";
             this.tb_userpwd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tb_userpwd.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tb_userpwd.WaterText = "";
@@ -316,6 +320,7 @@
             this.btn_get62data.TabIndex = 8;
             this.btn_get62data.Text = "提取62数据";
             this.btn_get62data.UseVisualStyleBackColor = false;
+            this.btn_get62data.Click += new System.EventHandler(this.Btn_get62data_Click);
             // 
             // btn_add
             // 
@@ -330,6 +335,7 @@
             this.btn_add.TabIndex = 7;
             this.btn_add.Text = "添   加";
             this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_add.Click += new System.EventHandler(this.Btn_add_Click);
             // 
             // tb_62data
             // 

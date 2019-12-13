@@ -31,5 +31,16 @@ namespace AakFunc.Facade
 
             return ResponseModel.Success;
         }
+
+
+        public bool Get62Data(ref  ResponseBase<string> ResponseModel, string Wxid)
+        {
+            
+               string url = AppConfig.BaseUrl + AppConfig.Get62Data + "/" + Wxid;
+               ResponseModel = PostByJson<string>(url, string.Empty);
+               return ResponseModel.Success;
+
+
+        }
     }
 }

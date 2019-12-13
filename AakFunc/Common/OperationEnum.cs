@@ -16,6 +16,11 @@ namespace AakFunc.Common
         使用62数据登录 = 4,
 
     }
+    public enum LoginStatus
+    {
+        在线=1,
+        离线=2,
+            未知=3
 
-   
+    }
 }

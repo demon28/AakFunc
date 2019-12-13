@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AakFunc.Models.DataBase;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace AakFunc.Facade
 {
    public class LoadDataFacade:FacadeBase
     {
-        public bool  LoadAccount(ref List <Models.DataBase.AccountModel> list)
+        public bool  LoadAccount(ref List <AccountModel> list)
         {
             try
             {
@@ -24,6 +25,17 @@ namespace AakFunc.Facade
                 return false;
             }
 
+        }
+
+
+        public bool AddAccount(AccountModel account) {
+
+            DataAccess.tb_Account tb_Account = new DataAccess.tb_Account();
+            if (tb_Account.Add(account)>1)
+            {
+                return true;
+            }
+            return false;
         }
 
 

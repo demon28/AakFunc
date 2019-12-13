@@ -23,16 +23,28 @@ namespace AakFunc
         {
             AddAccount addAccount = new AddAccount();
             addAccount.Show();
+
+            addAccount.FormClosed += AddAccount_FormClosed;
+        }
+
+        private void AddAccount_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            LoadData();
         }
 
         private void Btn_load_database_Click(object sender, EventArgs e)
         {
+
+            LoadData();
+
+        }
+
+        public void LoadData() {
+
             Facade.LoadDataFacade loadDataFacade = new Facade.LoadDataFacade();
             List<Models.DataBase.AccountModel> list = new List<Models.DataBase.AccountModel>();
-           loadDataFacade.LoadAccount(ref list);
+            loadDataFacade.LoadAccount(ref list);
             this.skinDataGridView1.DataSource = list;
-
-
         }
 
 

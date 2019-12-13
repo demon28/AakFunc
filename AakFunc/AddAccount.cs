@@ -1,4 +1,6 @@
-﻿using AakFunc.Models.Request;
+﻿using AakFunc.Common;
+using AakFunc.Models.DataBase;
+using AakFunc.Models.Request;
 using AakFunc.Models.Response;
 using CCWin;
 using System;
@@ -19,7 +21,9 @@ namespace AakFunc
     {
         System.Timers.Timer Timer_CheckLogin = new System.Timers.Timer();
         private static readonly object Lock_Islogin = new object();
+        public bool Reload = true;
 
+        Facade.LoginFacade loginFacade = new Facade.LoginFacade();
 
         public AddAccount()
         {
@@ -47,7 +51,7 @@ namespace AakFunc
             RequestModel.ProxyUserName = Common.ProxyConfig.UserPwd;
 
 
-            Facade.LoginFacade loginFacade = new Facade.LoginFacade();
+   
             if (!loginFacade.LoginByQrcode(ref ResponseModel,RequestModel))
             {
                 SetTextBox(loginFacade.Msg, this.tb_log);
@@ -75,7 +79,7 @@ namespace AakFunc
             lock (Lock_Islogin)
             {
 
-                Facade.LoginFacade loginFacade = new Facade.LoginFacade();
+       
 
                 ResponseBase<CheckLoginResponse> ResposecheckLogin = new ResponseBase<CheckLoginResponse>();
                 string uuid = this.lb_uuid.Text;
@@ -112,5 +116,52 @@ namespace AakFunc
                 Timer_CheckLogin.Stop();
             }
          }
+
+        private void Btn_get62data_Click(object sender, EventArgs e)
+        {
+            ResponseBase<string> ResposeGet62Data = new ResponseBase<string>();
+            string wxid = this.lb_wxid.Text;
+
+            if (!loginFacade.Get62Data(ref ResposeGet62Data, wxid))
+            {
+                SetTextBox("404网络异常，请检查ip或端口配置", tb_log);
+                return;
+            }
+            if (!ResposeGet62Data.Success)
+            {
+                SetTextBox("协议异常，请检查服务端协议", tb_log);
+                return;
+            }
+            SetTextBox("获取62数据成功！", tb_log);
+
+            this.tb_62data.Text = ResposeGet62Data.Data;
+
+        }
+
+        private void Btn_add_Click(object sender, EventArgs e)
+        {
+            AccountModel account = new AccountModel();
+            account.ProxyIp = ProxyConfig.Ip;
+            account.ProxyName = ProxyConfig.UserName;
+            account.ProxPwd = ProxyConfig.UserPwd;
+            account.HeartBeat = 0;
+            account.Status = (int)LoginStatus.未知;
+            account.user62data = tb_62data.Text;
+            account.username = tb_username.Text;
+            account.WxId = lb_wxid.Text;
+            account.ueserpwd = tb_userpwd.Text;
+            account.DeviceId = tb_decid.Text;
+            Facade.LoadDataFacade loadData = new Facade.LoadDataFacade();
+            if (!loadData.AddAccount(account))
+            {
+                MessageBox.Show("添加失败！");
+                return;
+            }
+
+
+            SetTextBox("添加成功！", tb_log);
+
+
+        }
     }
 }

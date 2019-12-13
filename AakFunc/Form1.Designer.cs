@@ -39,15 +39,6 @@
             this.tb_log2 = new CCWin.SkinControl.SkinWaterTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.skinDataGridView1 = new CCWin.SkinControl.SkinDataGridView();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.skinButton1 = new CCWin.SkinControl.SkinButton();
-            this.btn_add_account = new CCWin.SkinControl.SkinButton();
-            this.btn_load_database = new CCWin.SkinControl.SkinButton();
-            this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.lb_To_Wxid = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel2 = new CCWin.SkinControl.SkinLabel();
-            this.lb_wxid = new CCWin.SkinControl.SkinLabel();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WxId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +50,16 @@
             this.proxyIp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.proxyname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.proxypwd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.skinButton1 = new CCWin.SkinControl.SkinButton();
+            this.btn_add_account = new CCWin.SkinControl.SkinButton();
+            this.btn_load_database = new CCWin.SkinControl.SkinButton();
+            this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.lb_To_Wxid = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel2 = new CCWin.SkinControl.SkinLabel();
+            this.lb_wxid = new CCWin.SkinControl.SkinLabel();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).BeginInit();
@@ -68,6 +69,8 @@
             // 
             // tb_log1
             // 
+            this.tb_log1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_log1.Location = new System.Drawing.Point(6, 20);
             this.tb_log1.Multiline = true;
             this.tb_log1.Name = "tb_log1";
@@ -79,6 +82,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.tb_log2);
             this.groupBox1.Controls.Add(this.tb_log1);
             this.groupBox1.Location = new System.Drawing.Point(22, 670);
@@ -90,6 +95,7 @@
             // 
             // tb_log2
             // 
+            this.tb_log2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_log2.Location = new System.Drawing.Point(983, 20);
             this.tb_log2.Multiline = true;
             this.tb_log2.Name = "tb_log2";
@@ -101,6 +107,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.AutoSize = true;
             this.groupBox2.Controls.Add(this.skinDataGridView1);
             this.groupBox2.Location = new System.Drawing.Point(22, 125);
@@ -114,6 +123,7 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
             this.skinDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.skinDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.skinDataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.skinDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.skinDataGridView1.ColumnFont = null;
@@ -169,8 +179,77 @@
             this.skinDataGridView1.TitleBackColorBegin = System.Drawing.Color.White;
             this.skinDataGridView1.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
             // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "Uid";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // WxId
+            // 
+            this.WxId.DataPropertyName = "WxId";
+            this.WxId.HeaderText = "WxId";
+            this.WxId.Name = "WxId";
+            // 
+            // username
+            // 
+            this.username.DataPropertyName = "username";
+            this.username.HeaderText = "账号";
+            this.username.Name = "username";
+            // 
+            // ueserpwd
+            // 
+            this.ueserpwd.DataPropertyName = "ueserpwd";
+            this.ueserpwd.HeaderText = "密码";
+            this.ueserpwd.Name = "ueserpwd";
+            // 
+            // DeviceId
+            // 
+            this.DeviceId.DataPropertyName = "DeviceId";
+            this.DeviceId.HeaderText = "设备ID";
+            this.DeviceId.Name = "DeviceId";
+            // 
+            // Status
+            // 
+            this.Status.DataPropertyName = "Status";
+            this.Status.HeaderText = "状态";
+            this.Status.Name = "Status";
+            // 
+            // data62
+            // 
+            this.data62.DataPropertyName = "user62data";
+            this.data62.HeaderText = "62数据";
+            this.data62.Name = "data62";
+            // 
+            // HeartBeat
+            // 
+            this.HeartBeat.DataPropertyName = "HeartBeat";
+            this.HeartBeat.HeaderText = "心跳";
+            this.HeartBeat.Name = "HeartBeat";
+            // 
+            // proxyIp
+            // 
+            this.proxyIp.DataPropertyName = "ProxyIp";
+            this.proxyIp.HeaderText = "代理ip";
+            this.proxyIp.Name = "proxyIp";
+            // 
+            // proxyname
+            // 
+            this.proxyname.DataPropertyName = "ProxyName";
+            this.proxyname.HeaderText = "代理账户";
+            this.proxyname.Name = "proxyname";
+            // 
+            // proxypwd
+            // 
+            this.proxypwd.DataPropertyName = "ProxPwd";
+            this.proxypwd.HeaderText = "代理密码";
+            this.proxypwd.Name = "proxypwd";
+            // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.AutoSize = true;
             this.groupBox3.Controls.Add(this.skinButton1);
             this.groupBox3.Controls.Add(this.btn_add_account);
             this.groupBox3.Controls.Add(this.btn_load_database);
@@ -248,6 +327,8 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.lb_To_Wxid);
             this.groupBox4.Controls.Add(this.skinLabel2);
             this.groupBox4.Controls.Add(this.lb_wxid);
@@ -295,71 +376,10 @@
             this.lb_wxid.TabIndex = 1;
             this.lb_wxid.Text = "Wxid：";
             // 
-            // ID
+            // contextMenuStrip1
             // 
-            this.ID.DataPropertyName = "Uid";
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // WxId
-            // 
-            this.WxId.DataPropertyName = "WxId";
-            this.WxId.HeaderText = "WxId";
-            this.WxId.Name = "WxId";
-            // 
-            // username
-            // 
-            this.username.DataPropertyName = "username";
-            this.username.HeaderText = "账号";
-            this.username.Name = "username";
-            // 
-            // ueserpwd
-            // 
-            this.ueserpwd.DataPropertyName = "ueserpwd";
-            this.ueserpwd.HeaderText = "密码";
-            this.ueserpwd.Name = "ueserpwd";
-            // 
-            // DeviceId
-            // 
-            this.DeviceId.DataPropertyName = "DeviceId";
-            this.DeviceId.HeaderText = "设备ID";
-            this.DeviceId.Name = "DeviceId";
-            // 
-            // Status
-            // 
-            this.Status.DataPropertyName = "Status";
-            this.Status.HeaderText = "状态";
-            this.Status.Name = "Status";
-            // 
-            // data62
-            // 
-            this.data62.DataPropertyName = "user62data";
-            this.data62.HeaderText = "62数据";
-            this.data62.Name = "data62";
-            // 
-            // HeartBeat
-            // 
-            this.HeartBeat.DataPropertyName = "HeartBeat";
-            this.HeartBeat.HeaderText = "心跳";
-            this.HeartBeat.Name = "HeartBeat";
-            // 
-            // proxyIp
-            // 
-            this.proxyIp.DataPropertyName = "ProxyIp";
-            this.proxyIp.HeaderText = "代理ip";
-            this.proxyIp.Name = "proxyIp";
-            // 
-            // proxyname
-            // 
-            this.proxyname.DataPropertyName = "ProxyName";
-            this.proxyname.HeaderText = "代理账户";
-            this.proxyname.Name = "proxyname";
-            // 
-            // proxypwd
-            // 
-            this.proxypwd.DataPropertyName = "ProxPwd";
-            this.proxypwd.HeaderText = "代理密码";
-            this.proxypwd.Name = "proxypwd";
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Form1
             // 
@@ -372,6 +392,7 @@
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AKA";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -412,6 +433,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn proxyIp;
         private System.Windows.Forms.DataGridViewTextBoxColumn proxyname;
         private System.Windows.Forms.DataGridViewTextBoxColumn proxypwd;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 
