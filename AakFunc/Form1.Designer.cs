@@ -60,11 +60,17 @@
             this.skinLabel2 = new CCWin.SkinControl.SkinLabel();
             this.lb_wxid = new CCWin.SkinControl.SkinLabel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.登录上线62ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.登录验证ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.开启心跳toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.二次登录 = new System.Windows.Forms.ToolStripMenuItem();
+            this.退出登录 = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_log1
@@ -178,6 +184,7 @@
             this.skinDataGridView1.TitleBack = null;
             this.skinDataGridView1.TitleBackColorBegin = System.Drawing.Color.White;
             this.skinDataGridView1.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            this.skinDataGridView1.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.SkinDataGridView1_CellMouseDown);
             // 
             // ID
             // 
@@ -378,8 +385,44 @@
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.登录上线62ToolStripMenuItem,
+            this.登录验证ToolStripMenuItem,
+            this.开启心跳toolStripMenuItem1,
+            this.二次登录,
+            this.退出登录});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 136);
+            // 
+            // 登录上线62ToolStripMenuItem
+            // 
+            this.登录上线62ToolStripMenuItem.Name = "登录上线62ToolStripMenuItem";
+            this.登录上线62ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.登录上线62ToolStripMenuItem.Text = "登录上线（62）";
+            // 
+            // 登录验证ToolStripMenuItem
+            // 
+            this.登录验证ToolStripMenuItem.Name = "登录验证ToolStripMenuItem";
+            this.登录验证ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.登录验证ToolStripMenuItem.Text = "验证";
+            // 
+            // 开启心跳toolStripMenuItem1
+            // 
+            this.开启心跳toolStripMenuItem1.Name = "开启心跳toolStripMenuItem1";
+            this.开启心跳toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.开启心跳toolStripMenuItem1.Text = "开启心跳";
+            // 
+            // 二次登录
+            // 
+            this.二次登录.Name = "二次登录";
+            this.二次登录.Size = new System.Drawing.Size(180, 22);
+            this.二次登录.Text = "二次登录";
+            // 
+            // 退出登录
+            // 
+            this.退出登录.Name = "退出登录";
+            this.退出登录.Size = new System.Drawing.Size(180, 22);
+            this.退出登录.Text = "退出登录";
             // 
             // Form1
             // 
@@ -401,6 +444,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -434,6 +478,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn proxyname;
         private System.Windows.Forms.DataGridViewTextBoxColumn proxypwd;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 登录上线62ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 登录验证ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 开启心跳toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 二次登录;
+        private System.Windows.Forms.ToolStripMenuItem 退出登录;
     }
 }
 

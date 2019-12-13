@@ -47,8 +47,27 @@ namespace AakFunc
             this.skinDataGridView1.DataSource = list;
         }
 
-
-
-
+        private void SkinDataGridView1_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                if (e.RowIndex >= 0)
+                {
+                    //若行已是选中状态就不再进行设置
+                    if (skinDataGridView1.Rows[e.RowIndex].Selected == false)
+                    {
+                        skinDataGridView1.ClearSelection();
+                        skinDataGridView1.Rows[e.RowIndex].Selected = true;
+                    }
+                    //只选中一行时设置活动单元格
+                    if (skinDataGridView1.SelectedRows.Count == 1)
+                    {
+                        skinDataGridView1.CurrentCell = skinDataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex];
+                    }
+                    //弹出操作菜单
+                    contextMenuStrip1.Show(MousePosition.X, MousePosition.Y);
+                }
+            }
+        }
     }
 }
