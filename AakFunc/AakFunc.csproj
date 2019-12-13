@@ -83,7 +83,9 @@
       <DependentUpon>AddAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="Common\AppConfig.cs" />
+    <Compile Include="Common\OperationEnum.cs" />
     <Compile Include="Common\ProxyConfig.cs" />
+    <Compile Include="DataAccess\tb_account.cs" />
     <Compile Include="Facade\FacadeBase.cs" />
     <Compile Include="Facade\LoadDataFacade.cs" />
     <Compile Include="Facade\LoginFacade.cs" />
@@ -93,10 +95,20 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBase\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Helper\HttpHelper.cs" />
     <Compile Include="Helper\ImageHelper.cs" />
     <Compile Include="Helper\SqliteHelper.cs" />
     <Compile Include="Helper\XmlHelper.cs" />
+    <Compile Include="Models\DataBase\AccountModel.cs" />
+    <Compile Include="Models\FacadeModel\FacadeModel.cs" />
+    <Compile Include="Models\Request\LoginQrCodeRequest.cs" />
+    <Compile Include="Models\Request\RequestBase.cs" />
+    <Compile Include="Models\Response\CheckLoginResponse.cs" />
+    <Compile Include="Models\Response\LoginQrcodeResponse.cs" />
+    <Compile Include="Models\Response\ResponseBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddAccount.resx">
@@ -131,10 +143,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DataAccess\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

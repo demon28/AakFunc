@@ -31,22 +31,29 @@
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pic_qrcode = new CCWin.SkinControl.SkinPictureBox();
+            this.btn_getLoginQrcode = new CCWin.SkinControl.SkinButton();
             this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
             this.tb_username = new CCWin.SkinControl.SkinTextBox();
-            this.btn_getLoginQrcode = new CCWin.SkinControl.SkinButton();
             this.skinLabel2 = new CCWin.SkinControl.SkinLabel();
             this.tb_userpwd = new CCWin.SkinControl.SkinTextBox();
             this.skinLabel3 = new CCWin.SkinControl.SkinLabel();
             this.tb_decid = new CCWin.SkinControl.SkinTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.skinLabel4 = new CCWin.SkinControl.SkinLabel();
-            this.tb_62data = new CCWin.SkinControl.SkinWaterTextBox();
-            this.btn_add = new CCWin.SkinControl.SkinButton();
-            this.btn_get62data = new CCWin.SkinControl.SkinButton();
+            this.skinLabel5 = new CCWin.SkinControl.SkinLabel();
             this.btn_getdiecid = new CCWin.SkinControl.SkinButton();
+            this.btn_get62data = new CCWin.SkinControl.SkinButton();
+            this.btn_add = new CCWin.SkinControl.SkinButton();
+            this.tb_62data = new CCWin.SkinControl.SkinWaterTextBox();
+            this.skinLabel4 = new CCWin.SkinControl.SkinLabel();
+            this.tb_log = new CCWin.SkinControl.SkinWaterTextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.skinLabel6 = new CCWin.SkinControl.SkinLabel();
+            this.lb_uuid = new CCWin.SkinControl.SkinLabel();
+            this.lb_wxid = new CCWin.SkinControl.SkinLabel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_qrcode)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -65,9 +72,24 @@
             this.pic_qrcode.BackColor = System.Drawing.Color.Transparent;
             this.pic_qrcode.Location = new System.Drawing.Point(6, 20);
             this.pic_qrcode.Name = "pic_qrcode";
-            this.pic_qrcode.Size = new System.Drawing.Size(299, 278);
+            this.pic_qrcode.Size = new System.Drawing.Size(299, 289);
             this.pic_qrcode.TabIndex = 0;
             this.pic_qrcode.TabStop = false;
+            // 
+            // btn_getLoginQrcode
+            // 
+            this.btn_getLoginQrcode.BackColor = System.Drawing.Color.Transparent;
+            this.btn_getLoginQrcode.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btn_getLoginQrcode.DownBack = null;
+            this.btn_getLoginQrcode.Location = new System.Drawing.Point(6, 342);
+            this.btn_getLoginQrcode.MouseBack = null;
+            this.btn_getLoginQrcode.Name = "btn_getLoginQrcode";
+            this.btn_getLoginQrcode.NormlBack = null;
+            this.btn_getLoginQrcode.Size = new System.Drawing.Size(299, 46);
+            this.btn_getLoginQrcode.TabIndex = 3;
+            this.btn_getLoginQrcode.Text = "获取登录二维码";
+            this.btn_getLoginQrcode.UseVisualStyleBackColor = false;
+            this.btn_getLoginQrcode.Click += new System.EventHandler(this.Btn_getLoginQrcode_Click);
             // 
             // skinLabel1
             // 
@@ -121,20 +143,6 @@
             this.tb_username.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tb_username.WaterText = "";
             this.tb_username.WordWrap = true;
-            // 
-            // btn_getLoginQrcode
-            // 
-            this.btn_getLoginQrcode.BackColor = System.Drawing.Color.Transparent;
-            this.btn_getLoginQrcode.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.btn_getLoginQrcode.DownBack = null;
-            this.btn_getLoginQrcode.Location = new System.Drawing.Point(6, 325);
-            this.btn_getLoginQrcode.MouseBack = null;
-            this.btn_getLoginQrcode.Name = "btn_getLoginQrcode";
-            this.btn_getLoginQrcode.NormlBack = null;
-            this.btn_getLoginQrcode.Size = new System.Drawing.Size(299, 46);
-            this.btn_getLoginQrcode.TabIndex = 3;
-            this.btn_getLoginQrcode.Text = "获取登录二维码";
-            this.btn_getLoginQrcode.UseVisualStyleBackColor = false;
             // 
             // skinLabel2
             // 
@@ -210,7 +218,8 @@
             this.tb_decid.IconMouseState = CCWin.SkinClass.ControlState.Normal;
             this.tb_decid.IsPasswordChat = '\0';
             this.tb_decid.IsSystemPasswordChar = false;
-            this.tb_decid.Lines = new string[0];
+            this.tb_decid.Lines = new string[] {
+        "49aa7db2f4a3ffe0e96216f6b92cde22"};
             this.tb_decid.Location = new System.Drawing.Point(96, 105);
             this.tb_decid.Margin = new System.Windows.Forms.Padding(0);
             this.tb_decid.MaxLength = 32767;
@@ -237,6 +246,7 @@
             this.tb_decid.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tb_decid.SkinTxt.WaterText = "";
             this.tb_decid.TabIndex = 4;
+            this.tb_decid.Text = "49aa7db2f4a3ffe0e96216f6b92cde22";
             this.tb_decid.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tb_decid.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tb_decid.WaterText = "";
@@ -244,6 +254,10 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lb_wxid);
+            this.groupBox2.Controls.Add(this.lb_uuid);
+            this.groupBox2.Controls.Add(this.skinLabel6);
+            this.groupBox2.Controls.Add(this.skinLabel5);
             this.groupBox2.Controls.Add(this.btn_getdiecid);
             this.groupBox2.Controls.Add(this.btn_get62data);
             this.groupBox2.Controls.Add(this.btn_add);
@@ -257,60 +271,22 @@
             this.groupBox2.Controls.Add(this.tb_userpwd);
             this.groupBox2.Location = new System.Drawing.Point(359, 31);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(401, 394);
+            this.groupBox2.Size = new System.Drawing.Size(411, 394);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "参数";
             // 
-            // skinLabel4
+            // skinLabel5
             // 
-            this.skinLabel4.AutoSize = true;
-            this.skinLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel4.BorderColor = System.Drawing.Color.White;
-            this.skinLabel4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel4.Location = new System.Drawing.Point(27, 155);
-            this.skinLabel4.Name = "skinLabel4";
-            this.skinLabel4.Size = new System.Drawing.Size(58, 17);
-            this.skinLabel4.TabIndex = 6;
-            this.skinLabel4.Text = "62数据：";
-            // 
-            // tb_62data
-            // 
-            this.tb_62data.Location = new System.Drawing.Point(96, 155);
-            this.tb_62data.Multiline = true;
-            this.tb_62data.Name = "tb_62data";
-            this.tb_62data.Size = new System.Drawing.Size(280, 128);
-            this.tb_62data.TabIndex = 7;
-            this.tb_62data.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.tb_62data.WaterText = "";
-            // 
-            // btn_add
-            // 
-            this.btn_add.BackColor = System.Drawing.Color.Transparent;
-            this.btn_add.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.btn_add.DownBack = null;
-            this.btn_add.Location = new System.Drawing.Point(257, 312);
-            this.btn_add.MouseBack = null;
-            this.btn_add.Name = "btn_add";
-            this.btn_add.NormlBack = null;
-            this.btn_add.Size = new System.Drawing.Size(119, 46);
-            this.btn_add.TabIndex = 7;
-            this.btn_add.Text = "添   加";
-            this.btn_add.UseVisualStyleBackColor = false;
-            // 
-            // btn_get62data
-            // 
-            this.btn_get62data.BackColor = System.Drawing.Color.Transparent;
-            this.btn_get62data.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.btn_get62data.DownBack = null;
-            this.btn_get62data.Location = new System.Drawing.Point(63, 312);
-            this.btn_get62data.MouseBack = null;
-            this.btn_get62data.Name = "btn_get62data";
-            this.btn_get62data.NormlBack = null;
-            this.btn_get62data.Size = new System.Drawing.Size(119, 46);
-            this.btn_get62data.TabIndex = 8;
-            this.btn_get62data.Text = "提取62数据";
-            this.btn_get62data.UseVisualStyleBackColor = false;
+            this.skinLabel5.AutoSize = true;
+            this.skinLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel5.BorderColor = System.Drawing.Color.White;
+            this.skinLabel5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel5.Location = new System.Drawing.Point(27, 292);
+            this.skinLabel5.Name = "skinLabel5";
+            this.skinLabel5.Size = new System.Drawing.Size(49, 17);
+            this.skinLabel5.TabIndex = 10;
+            this.skinLabel5.Text = "Wxid：";
             // 
             // btn_getdiecid
             // 
@@ -327,11 +303,119 @@
             this.btn_getdiecid.UseVisualStyleBackColor = false;
             this.btn_getdiecid.Click += new System.EventHandler(this.Btn_getdiecid_Click);
             // 
+            // btn_get62data
+            // 
+            this.btn_get62data.BackColor = System.Drawing.Color.Transparent;
+            this.btn_get62data.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btn_get62data.DownBack = null;
+            this.btn_get62data.Location = new System.Drawing.Point(65, 342);
+            this.btn_get62data.MouseBack = null;
+            this.btn_get62data.Name = "btn_get62data";
+            this.btn_get62data.NormlBack = null;
+            this.btn_get62data.Size = new System.Drawing.Size(119, 46);
+            this.btn_get62data.TabIndex = 8;
+            this.btn_get62data.Text = "提取62数据";
+            this.btn_get62data.UseVisualStyleBackColor = false;
+            // 
+            // btn_add
+            // 
+            this.btn_add.BackColor = System.Drawing.Color.Transparent;
+            this.btn_add.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btn_add.DownBack = null;
+            this.btn_add.Location = new System.Drawing.Point(257, 342);
+            this.btn_add.MouseBack = null;
+            this.btn_add.Name = "btn_add";
+            this.btn_add.NormlBack = null;
+            this.btn_add.Size = new System.Drawing.Size(119, 46);
+            this.btn_add.TabIndex = 7;
+            this.btn_add.Text = "添   加";
+            this.btn_add.UseVisualStyleBackColor = false;
+            // 
+            // tb_62data
+            // 
+            this.tb_62data.Location = new System.Drawing.Point(96, 155);
+            this.tb_62data.Multiline = true;
+            this.tb_62data.Name = "tb_62data";
+            this.tb_62data.Size = new System.Drawing.Size(280, 85);
+            this.tb_62data.TabIndex = 7;
+            this.tb_62data.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.tb_62data.WaterText = "";
+            // 
+            // skinLabel4
+            // 
+            this.skinLabel4.AutoSize = true;
+            this.skinLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel4.BorderColor = System.Drawing.Color.White;
+            this.skinLabel4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel4.Location = new System.Drawing.Point(27, 155);
+            this.skinLabel4.Name = "skinLabel4";
+            this.skinLabel4.Size = new System.Drawing.Size(58, 17);
+            this.skinLabel4.TabIndex = 6;
+            this.skinLabel4.Text = "62数据：";
+            // 
+            // tb_log
+            // 
+            this.tb_log.Location = new System.Drawing.Point(6, 14);
+            this.tb_log.Multiline = true;
+            this.tb_log.Name = "tb_log";
+            this.tb_log.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.tb_log.Size = new System.Drawing.Size(734, 99);
+            this.tb_log.TabIndex = 0;
+            this.tb_log.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.tb_log.WaterText = "";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.tb_log);
+            this.groupBox3.Location = new System.Drawing.Point(24, 431);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(746, 125);
+            this.groupBox3.TabIndex = 7;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "输出";
+            // 
+            // skinLabel6
+            // 
+            this.skinLabel6.AutoSize = true;
+            this.skinLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel6.BorderColor = System.Drawing.Color.White;
+            this.skinLabel6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel6.Location = new System.Drawing.Point(27, 258);
+            this.skinLabel6.Name = "skinLabel6";
+            this.skinLabel6.Size = new System.Drawing.Size(47, 17);
+            this.skinLabel6.TabIndex = 11;
+            this.skinLabel6.Text = "Uuid：";
+            // 
+            // lb_uuid
+            // 
+            this.lb_uuid.AutoSize = true;
+            this.lb_uuid.BackColor = System.Drawing.Color.Transparent;
+            this.lb_uuid.BorderColor = System.Drawing.Color.White;
+            this.lb_uuid.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lb_uuid.Location = new System.Drawing.Point(107, 258);
+            this.lb_uuid.Name = "lb_uuid";
+            this.lb_uuid.Size = new System.Drawing.Size(47, 17);
+            this.lb_uuid.TabIndex = 12;
+            this.lb_uuid.Text = "Uuid：";
+            // 
+            // lb_wxid
+            // 
+            this.lb_wxid.AutoSize = true;
+            this.lb_wxid.BackColor = System.Drawing.Color.Transparent;
+            this.lb_wxid.BorderColor = System.Drawing.Color.White;
+            this.lb_wxid.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lb_wxid.Location = new System.Drawing.Point(107, 292);
+            this.lb_wxid.Name = "lb_wxid";
+            this.lb_wxid.Size = new System.Drawing.Size(49, 17);
+            this.lb_wxid.TabIndex = 13;
+            this.lb_wxid.Text = "Wxid：";
+            // 
             // AddAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 563);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "AddAccount";
@@ -341,6 +425,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_qrcode)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -362,5 +448,11 @@
         private CCWin.SkinControl.SkinButton btn_add;
         private CCWin.SkinControl.SkinButton btn_get62data;
         private CCWin.SkinControl.SkinButton btn_getdiecid;
+        private CCWin.SkinControl.SkinWaterTextBox tb_log;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private CCWin.SkinControl.SkinLabel skinLabel5;
+        private CCWin.SkinControl.SkinLabel lb_wxid;
+        private CCWin.SkinControl.SkinLabel lb_uuid;
+        private CCWin.SkinControl.SkinLabel skinLabel6;
     }
 }

@@ -160,13 +160,13 @@ namespace AakFunc.Helper
         /// <param name="cmdText">执行语句</param>
         /// <param name="commandParameters">传入的参数</param>
         /// <returns>返回：第一行第一列</returns>
-        public static object ExecuteScalar(string cmdText, params object[] commandParameters)
+        public static string ExecuteScalar(string cmdText, params object[] commandParameters)
         {
             SQLiteCommand cmd = new SQLiteCommand();
             using (SQLiteConnection connection = GetSQLiteConnection())
             {
                 PrepareCommand(cmd, connection, cmdText, commandParameters);
-                return cmd.ExecuteScalar();
+                return cmd.ExecuteScalar().ToString();
             }
         }
 

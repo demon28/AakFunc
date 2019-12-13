@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tb_log1 = new CCWin.SkinControl.SkinWaterTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -48,6 +48,17 @@
             this.lb_To_Wxid = new CCWin.SkinControl.SkinLabel();
             this.skinLabel2 = new CCWin.SkinControl.SkinLabel();
             this.lb_wxid = new CCWin.SkinControl.SkinLabel();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.WxId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ueserpwd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DeviceId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.data62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HeartBeat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proxyIp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proxyname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proxypwd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).BeginInit();
@@ -101,30 +112,42 @@
             // 
             // skinDataGridView1
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
-            this.skinDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.skinDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.skinDataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.skinDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.skinDataGridView1.ColumnFont = null;
             this.skinDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.skinDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.skinDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.skinDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.skinDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.WxId,
+            this.username,
+            this.ueserpwd,
+            this.DeviceId,
+            this.Status,
+            this.data62,
+            this.HeartBeat,
+            this.proxyIp,
+            this.proxyname,
+            this.proxypwd});
             this.skinDataGridView1.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.skinDataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.skinDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.skinDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.skinDataGridView1.EnableHeadersVisualStyles = false;
             this.skinDataGridView1.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -134,11 +157,11 @@
             this.skinDataGridView1.Name = "skinDataGridView1";
             this.skinDataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.skinDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.skinDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.skinDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.skinDataGridView1.RowTemplate.Height = 23;
             this.skinDataGridView1.Size = new System.Drawing.Size(962, 519);
             this.skinDataGridView1.TabIndex = 0;
@@ -209,6 +232,7 @@
             this.btn_load_database.Text = "加载数据库";
             this.btn_load_database.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_load_database.UseVisualStyleBackColor = false;
+            this.btn_load_database.Click += new System.EventHandler(this.Btn_load_database_Click);
             // 
             // skinLabel1
             // 
@@ -271,6 +295,72 @@
             this.lb_wxid.TabIndex = 1;
             this.lb_wxid.Text = "Wxid：";
             // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "Uid";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // WxId
+            // 
+            this.WxId.DataPropertyName = "WxId";
+            this.WxId.HeaderText = "WxId";
+            this.WxId.Name = "WxId";
+            // 
+            // username
+            // 
+            this.username.DataPropertyName = "username";
+            this.username.HeaderText = "账号";
+            this.username.Name = "username";
+            // 
+            // ueserpwd
+            // 
+            this.ueserpwd.DataPropertyName = "ueserpwd";
+            this.ueserpwd.HeaderText = "密码";
+            this.ueserpwd.Name = "ueserpwd";
+            // 
+            // DeviceId
+            // 
+            this.DeviceId.DataPropertyName = "DeviceId";
+            this.DeviceId.HeaderText = "设备ID";
+            this.DeviceId.Name = "DeviceId";
+            // 
+            // Status
+            // 
+            this.Status.DataPropertyName = "Status";
+            this.Status.HeaderText = "状态";
+            this.Status.Name = "Status";
+            // 
+            // data62
+            // 
+            this.data62.DataPropertyName = "user62data";
+            this.data62.HeaderText = "62数据";
+            this.data62.Name = "data62";
+            // 
+            // HeartBeat
+            // 
+            this.HeartBeat.DataPropertyName = "HeartBeat";
+            this.HeartBeat.HeaderText = "心跳";
+            this.HeartBeat.Name = "HeartBeat";
+            // 
+            // proxyIp
+            // 
+            this.proxyIp.DataPropertyName = "ProxyIp";
+            this.proxyIp.HeaderText = "代理ip";
+            this.proxyIp.Name = "proxyIp";
+            // 
+            // proxyname
+            // 
+            this.proxyname.DataPropertyName = "ProxyName";
+            this.proxyname.HeaderText = "代理账户";
+            this.proxyname.Name = "proxyname";
+            // 
+            // proxypwd
+            // 
+            this.proxypwd.DataPropertyName = "ProxPwd";
+            this.proxypwd.HeaderText = "代理密码";
+            this.proxypwd.Name = "proxypwd";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -311,6 +401,17 @@
         private CCWin.SkinControl.SkinLabel lb_To_Wxid;
         private CCWin.SkinControl.SkinLabel skinLabel2;
         private CCWin.SkinControl.SkinButton skinButton1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn WxId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn username;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ueserpwd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DeviceId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn data62;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HeartBeat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn proxyIp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn proxyname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn proxypwd;
     }
 }
 
