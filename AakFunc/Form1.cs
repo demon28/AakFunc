@@ -18,7 +18,7 @@ namespace AakFunc
         {
             InitializeComponent();
         }
-
+        Facade.LoadDataFacade loadDataFacade = new Facade.LoadDataFacade();
         private void Btn_add_account_Click(object sender, EventArgs e)
         {
             AddAccount addAccount = new AddAccount();
@@ -41,7 +41,7 @@ namespace AakFunc
 
         public void LoadData() {
 
-            Facade.LoadDataFacade loadDataFacade = new Facade.LoadDataFacade();
+         
             List<Models.DataBase.AccountModel> list = new List<Models.DataBase.AccountModel>();
             loadDataFacade.LoadAccount(ref list);
             this.skinDataGridView1.DataSource = list;
@@ -68,6 +68,82 @@ namespace AakFunc
                     contextMenuStrip1.Show(MousePosition.X, MousePosition.Y);
                 }
             }
+        }
+
+        private void SkinDataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CheckAccount();
+        }
+
+        public int CheckAccount() {
+
+            int rowindex = skinDataGridView1.CurrentRow.Index;
+            string wxid = skinDataGridView1.Rows[rowindex].Cells[1].Value == null ? "" : skinDataGridView1.Rows[rowindex].Cells[1].Value.ToString();
+            if (string.IsNullOrEmpty(wxid))
+            {
+                return 0;
+            }
+            SetLable(skinDataGridView1.Rows[rowindex].Cells[0].Value.ToString(), lb_uid);
+            SetLable(wxid, lb_wxid);
+
+            return rowindex;
+
+        }
+
+        public void UpdateAccount() {
+            CheckAccount();
+            UpdateAccount updateAccount = new UpdateAccount(this.lb_wxid.Text);
+            updateAccount.Show();
+        }
+
+        private void 选中账号_Click(object sender, EventArgs e)
+        {
+            CheckAccount();
+        }
+        public bool DelAccount() {
+            if (MessageBox.Show("确定要删除账号吗？", "Waring", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
+            {
+                return false;
+            }
+
+
+            int index = CheckAccount();
+          
+
+            if (!loadDataFacade.Delete( int.Parse(lb_uid.Text)))
+            {
+                return false;
+            }
+            DataGridViewRow row = skinDataGridView1.Rows[index];
+            skinDataGridView1.Rows.Remove(row);
+               
+
+        
+
+            return true;
+         
+        }
+
+
+        private void 账号详情_Click(object sender, EventArgs e)
+        {
+            UpdateAccount();
+        }
+
+        private void SkinDataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            UpdateAccount();
+        }
+
+        private void 删除账号_Click(object sender, EventArgs e)
+        {
+            DelAccount();
+        }
+
+        private void SkinButton1_Click(object sender, EventArgs e)
+        {
+            AccountModel model = new AccountModel();
+            loadDataFacade.SelectById(1,ref model);
         }
     }
 }

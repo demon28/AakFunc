@@ -75,10 +75,8 @@ namespace AakFunc.Helper
             if (commandParameters != null)
             {
                 foreach (object parm in commandParameters)
-                    cmd.Parameters.AddWithValue(string.Empty, parm);
-
-                //for (int i = 0; i < p.Length; i++)
-                //    cmd.Parameters[i].Value = p[i];
+                    cmd.Parameters.Add(parm);
+            
             }
         }
 

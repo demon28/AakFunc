@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tb_log1 = new CCWin.SkinControl.SkinWaterTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -65,6 +65,12 @@
             this.开启心跳toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.二次登录 = new System.Windows.Forms.ToolStripMenuItem();
             this.退出登录 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.删除账号 = new System.Windows.Forms.ToolStripMenuItem();
+            this.选中ToWxid = new System.Windows.Forms.ToolStripMenuItem();
+            this.skinLabel3 = new CCWin.SkinControl.SkinLabel();
+            this.lb_uid = new CCWin.SkinControl.SkinLabel();
+            this.btn_login62 = new CCWin.SkinControl.SkinButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).BeginInit();
@@ -127,21 +133,22 @@
             // 
             // skinDataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
-            this.skinDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.skinDataGridView1.AllowUserToAddRows = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.skinDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.skinDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.skinDataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.skinDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.skinDataGridView1.ColumnFont = null;
             this.skinDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.skinDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.skinDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.skinDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.skinDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -156,14 +163,14 @@
             this.proxyname,
             this.proxypwd});
             this.skinDataGridView1.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.skinDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.skinDataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
             this.skinDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.skinDataGridView1.EnableHeadersVisualStyles = false;
             this.skinDataGridView1.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -171,19 +178,22 @@
             this.skinDataGridView1.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
             this.skinDataGridView1.Location = new System.Drawing.Point(3, 17);
             this.skinDataGridView1.Name = "skinDataGridView1";
+            this.skinDataGridView1.ReadOnly = true;
             this.skinDataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.skinDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.skinDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.skinDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.skinDataGridView1.RowTemplate.Height = 23;
             this.skinDataGridView1.Size = new System.Drawing.Size(962, 519);
             this.skinDataGridView1.TabIndex = 0;
             this.skinDataGridView1.TitleBack = null;
             this.skinDataGridView1.TitleBackColorBegin = System.Drawing.Color.White;
             this.skinDataGridView1.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            this.skinDataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SkinDataGridView1_CellClick);
+            this.skinDataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SkinDataGridView1_CellDoubleClick);
             this.skinDataGridView1.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.SkinDataGridView1_CellMouseDown);
             // 
             // ID
@@ -191,72 +201,84 @@
             this.ID.DataPropertyName = "Uid";
             this.ID.HeaderText = "ID";
             this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
             // 
             // WxId
             // 
             this.WxId.DataPropertyName = "WxId";
             this.WxId.HeaderText = "WxId";
             this.WxId.Name = "WxId";
+            this.WxId.ReadOnly = true;
             // 
             // username
             // 
             this.username.DataPropertyName = "username";
             this.username.HeaderText = "账号";
             this.username.Name = "username";
+            this.username.ReadOnly = true;
             // 
             // ueserpwd
             // 
             this.ueserpwd.DataPropertyName = "ueserpwd";
             this.ueserpwd.HeaderText = "密码";
             this.ueserpwd.Name = "ueserpwd";
+            this.ueserpwd.ReadOnly = true;
             // 
             // DeviceId
             // 
             this.DeviceId.DataPropertyName = "DeviceId";
             this.DeviceId.HeaderText = "设备ID";
             this.DeviceId.Name = "DeviceId";
+            this.DeviceId.ReadOnly = true;
             // 
             // Status
             // 
             this.Status.DataPropertyName = "Status";
             this.Status.HeaderText = "状态";
             this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
             // 
             // data62
             // 
             this.data62.DataPropertyName = "user62data";
             this.data62.HeaderText = "62数据";
             this.data62.Name = "data62";
+            this.data62.ReadOnly = true;
             // 
             // HeartBeat
             // 
             this.HeartBeat.DataPropertyName = "HeartBeat";
             this.HeartBeat.HeaderText = "心跳";
             this.HeartBeat.Name = "HeartBeat";
+            this.HeartBeat.ReadOnly = true;
             // 
             // proxyIp
             // 
             this.proxyIp.DataPropertyName = "ProxyIp";
             this.proxyIp.HeaderText = "代理ip";
             this.proxyIp.Name = "proxyIp";
+            this.proxyIp.ReadOnly = true;
             // 
             // proxyname
             // 
             this.proxyname.DataPropertyName = "ProxyName";
             this.proxyname.HeaderText = "代理账户";
             this.proxyname.Name = "proxyname";
+            this.proxyname.ReadOnly = true;
             // 
             // proxypwd
             // 
             this.proxypwd.DataPropertyName = "ProxPwd";
             this.proxypwd.HeaderText = "代理密码";
             this.proxypwd.Name = "proxypwd";
+            this.proxypwd.ReadOnly = true;
             // 
             // groupBox3
             // 
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.AutoSize = true;
+            this.groupBox3.Controls.Add(this.btn_login62);
             this.groupBox3.Controls.Add(this.skinButton1);
             this.groupBox3.Controls.Add(this.btn_add_account);
             this.groupBox3.Controls.Add(this.btn_load_database);
@@ -283,6 +305,7 @@
             this.skinButton1.Text = "刷新列表";
             this.skinButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.skinButton1.UseVisualStyleBackColor = false;
+            this.skinButton1.Click += new System.EventHandler(this.SkinButton1_Click);
             // 
             // btn_add_account
             // 
@@ -326,7 +349,7 @@
             this.skinLabel1.BackColor = System.Drawing.Color.Transparent;
             this.skinLabel1.BorderColor = System.Drawing.Color.White;
             this.skinLabel1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel1.Location = new System.Drawing.Point(24, 35);
+            this.skinLabel1.Location = new System.Drawing.Point(25, 75);
             this.skinLabel1.Name = "skinLabel1";
             this.skinLabel1.Size = new System.Drawing.Size(49, 17);
             this.skinLabel1.TabIndex = 0;
@@ -336,6 +359,8 @@
             // 
             this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Controls.Add(this.lb_uid);
+            this.groupBox4.Controls.Add(this.skinLabel3);
             this.groupBox4.Controls.Add(this.lb_To_Wxid);
             this.groupBox4.Controls.Add(this.skinLabel2);
             this.groupBox4.Controls.Add(this.lb_wxid);
@@ -353,7 +378,7 @@
             this.lb_To_Wxid.BackColor = System.Drawing.Color.Transparent;
             this.lb_To_Wxid.BorderColor = System.Drawing.Color.White;
             this.lb_To_Wxid.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lb_To_Wxid.Location = new System.Drawing.Point(99, 68);
+            this.lb_To_Wxid.Location = new System.Drawing.Point(100, 108);
             this.lb_To_Wxid.Name = "lb_To_Wxid";
             this.lb_To_Wxid.Size = new System.Drawing.Size(69, 17);
             this.lb_To_Wxid.TabIndex = 3;
@@ -365,7 +390,7 @@
             this.skinLabel2.BackColor = System.Drawing.Color.Transparent;
             this.skinLabel2.BorderColor = System.Drawing.Color.White;
             this.skinLabel2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel2.Location = new System.Drawing.Point(24, 68);
+            this.skinLabel2.Location = new System.Drawing.Point(25, 108);
             this.skinLabel2.Name = "skinLabel2";
             this.skinLabel2.Size = new System.Drawing.Size(69, 17);
             this.skinLabel2.TabIndex = 2;
@@ -377,7 +402,7 @@
             this.lb_wxid.BackColor = System.Drawing.Color.Transparent;
             this.lb_wxid.BorderColor = System.Drawing.Color.White;
             this.lb_wxid.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lb_wxid.Location = new System.Drawing.Point(79, 35);
+            this.lb_wxid.Location = new System.Drawing.Point(80, 75);
             this.lb_wxid.Name = "lb_wxid";
             this.lb_wxid.Size = new System.Drawing.Size(49, 17);
             this.lb_wxid.TabIndex = 1;
@@ -388,41 +413,103 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.登录上线62ToolStripMenuItem,
             this.登录验证ToolStripMenuItem,
+            this.toolStripSeparator1,
             this.开启心跳toolStripMenuItem1,
+            this.选中ToWxid,
             this.二次登录,
+            this.删除账号,
             this.退出登录});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 136);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(173, 164);
             // 
             // 登录上线62ToolStripMenuItem
             // 
             this.登录上线62ToolStripMenuItem.Name = "登录上线62ToolStripMenuItem";
-            this.登录上线62ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.登录上线62ToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.登录上线62ToolStripMenuItem.Text = "登录上线（62）";
             // 
             // 登录验证ToolStripMenuItem
             // 
             this.登录验证ToolStripMenuItem.Name = "登录验证ToolStripMenuItem";
-            this.登录验证ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.登录验证ToolStripMenuItem.Text = "验证";
+            this.登录验证ToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.登录验证ToolStripMenuItem.Text = "登录验证";
             // 
             // 开启心跳toolStripMenuItem1
             // 
             this.开启心跳toolStripMenuItem1.Name = "开启心跳toolStripMenuItem1";
-            this.开启心跳toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.开启心跳toolStripMenuItem1.Text = "开启心跳";
+            this.开启心跳toolStripMenuItem1.Size = new System.Drawing.Size(172, 22);
+            this.开启心跳toolStripMenuItem1.Text = "开启心跳（关闭）";
             // 
             // 二次登录
             // 
             this.二次登录.Name = "二次登录";
-            this.二次登录.Size = new System.Drawing.Size(180, 22);
+            this.二次登录.Size = new System.Drawing.Size(172, 22);
             this.二次登录.Text = "二次登录";
             // 
             // 退出登录
             // 
             this.退出登录.Name = "退出登录";
-            this.退出登录.Size = new System.Drawing.Size(180, 22);
+            this.退出登录.Size = new System.Drawing.Size(172, 22);
             this.退出登录.Text = "退出登录";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(169, 6);
+            // 
+            // 删除账号
+            // 
+            this.删除账号.Name = "删除账号";
+            this.删除账号.Size = new System.Drawing.Size(172, 22);
+            this.删除账号.Text = "删除账号";
+            this.删除账号.Click += new System.EventHandler(this.删除账号_Click);
+            // 
+            // 选中ToWxid
+            // 
+            this.选中ToWxid.Name = "选中ToWxid";
+            this.选中ToWxid.Size = new System.Drawing.Size(172, 22);
+            this.选中ToWxid.Text = "选中ToWxid";
+            // 
+            // skinLabel3
+            // 
+            this.skinLabel3.AutoSize = true;
+            this.skinLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel3.BorderColor = System.Drawing.Color.White;
+            this.skinLabel3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel3.Location = new System.Drawing.Point(25, 45);
+            this.skinLabel3.Name = "skinLabel3";
+            this.skinLabel3.Size = new System.Drawing.Size(33, 17);
+            this.skinLabel3.TabIndex = 4;
+            this.skinLabel3.Text = "ID：";
+            // 
+            // lb_uid
+            // 
+            this.lb_uid.AutoSize = true;
+            this.lb_uid.BackColor = System.Drawing.Color.Transparent;
+            this.lb_uid.BorderColor = System.Drawing.Color.White;
+            this.lb_uid.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lb_uid.Location = new System.Drawing.Point(80, 45);
+            this.lb_uid.Name = "lb_uid";
+            this.lb_uid.Size = new System.Drawing.Size(42, 17);
+            this.lb_uid.TabIndex = 5;
+            this.lb_uid.Text = "UID：";
+            // 
+            // btn_login62
+            // 
+            this.btn_login62.BackColor = System.Drawing.Color.Transparent;
+            this.btn_login62.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btn_login62.DownBack = null;
+            this.btn_login62.Image = ((System.Drawing.Image)(resources.GetObject("btn_login62.Image")));
+            this.btn_login62.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_login62.Location = new System.Drawing.Point(340, 20);
+            this.btn_login62.MouseBack = null;
+            this.btn_login62.Name = "btn_login62";
+            this.btn_login62.NormlBack = null;
+            this.btn_login62.Size = new System.Drawing.Size(82, 31);
+            this.btn_login62.TabIndex = 3;
+            this.btn_login62.Text = "全部登录";
+            this.btn_login62.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_login62.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -483,6 +570,12 @@
         private System.Windows.Forms.ToolStripMenuItem 开启心跳toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 二次登录;
         private System.Windows.Forms.ToolStripMenuItem 退出登录;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem 选中ToWxid;
+        private System.Windows.Forms.ToolStripMenuItem 删除账号;
+        private CCWin.SkinControl.SkinLabel lb_uid;
+        private CCWin.SkinControl.SkinLabel skinLabel3;
+        private CCWin.SkinControl.SkinButton btn_login62;
     }
 }
 
