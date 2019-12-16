@@ -17,6 +17,7 @@ namespace AakFunc
         public Form1()
         {
             InitializeComponent();
+            skinDataGridView1.AutoGenerateColumns = false;
         }
         Facade.LoadDataFacade loadDataFacade = new Facade.LoadDataFacade();
         private void Btn_add_account_Click(object sender, EventArgs e)
@@ -45,6 +46,7 @@ namespace AakFunc
             List<Models.DataBase.AccountModel> list = new List<Models.DataBase.AccountModel>();
             loadDataFacade.LoadAccount(ref list);
             this.skinDataGridView1.DataSource = list;
+          
         }
 
         private void SkinDataGridView1_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
@@ -114,11 +116,9 @@ namespace AakFunc
             {
                 return false;
             }
-            DataGridViewRow row = skinDataGridView1.Rows[index];
-            skinDataGridView1.Rows.Remove(row);
-               
 
-        
+            LoadData();
+
 
             return true;
          
@@ -144,6 +144,18 @@ namespace AakFunc
         {
             AccountModel model = new AccountModel();
             loadDataFacade.SelectById(1,ref model);
+        }
+
+        private void 选中ToWxid_Click(object sender, EventArgs e)
+        {
+            int rowindex = skinDataGridView1.CurrentRow.Index;
+            string wxid = skinDataGridView1.Rows[rowindex].Cells[1].Value == null ? "" : skinDataGridView1.Rows[rowindex].Cells[1].Value.ToString();
+            if (string.IsNullOrEmpty(wxid))
+            {
+                return ;
+            }
+       
+            SetLable(wxid, lb_To_Wxid);
         }
     }
 }

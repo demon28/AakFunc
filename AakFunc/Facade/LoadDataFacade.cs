@@ -31,7 +31,7 @@ namespace AakFunc.Facade
         public bool AddAccount(AccountModel account) {
 
             DataAccess.tb_Account tb_Account = new DataAccess.tb_Account();
-            if (tb_Account.Add(account)>1)
+            if (tb_Account.Add(account)>0)
             {
                 return true;
             }

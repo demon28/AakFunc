@@ -18,9 +18,10 @@ namespace AakFunc.Common
     }
     public enum LoginStatus
     {
+        未登录=0,
         在线=1,
         离线=2,
-            未知=3
+        未知=3
 
     }
 }

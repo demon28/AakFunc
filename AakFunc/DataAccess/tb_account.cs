@@ -282,7 +282,7 @@ namespace AakFunc.DataAccess
         public List<AccountModel> GetAll()
         {
 
-            return DataSetToListModel(GetList("1=1"));
+            return (GetList("1=1"));
 
         }
 
